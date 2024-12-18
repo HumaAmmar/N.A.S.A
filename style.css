@@ -1,0 +1,259 @@
+body{
+    overflow-x: auto;
+}
+
+.home{
+    background-color: black;
+    color: white;
+}
+
+#ne{
+    color: white;
+}
+
+.side{
+    color: white;
+}
+
+
+
+.one{
+   color: white;
+   font-weight: bolder;
+   margin-bottom: 10px;
+}
+
+.two{
+    height: 30px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.three{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+body{
+    background-color:black;
+    
+    
+}
+
+.banner{
+    background-image: url(between.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    
+}
+
+.banner .slider{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(calc( (var(--position) - 1) * (360 /var(--quantity)) * 1deg) )
+     translateZ(500px);
+}
+
+@keyframes autoRun {
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.big{
+    background-color: black;
+}
+
+.quest{
+    font-size: 100px;
+}
+
+.fly{
+    font-size: 20px;
+}
+
+.card-img{
+    opacity: 0.5;
+}
+
+.future{
+    background-image: url(roc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    font-weight: bold;
+    color:white important ; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fu{
+    background-image: url(https://images-assets.nasa.gov/image/iss063e053998/iss063e053998~large.jpg?w=1536&h=1024&fit=crop&crop=faces%2Cfocalpoint);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    font-weight: bold;
+}
+
+.fea{
+    color: white;
+}
+
+.globe > div > img {
+    border: 1px solid white;
+}
+
+.foot{
+    background-color: black;
+    color: white;
+    
+    padding: 20px;
+}
+
+@media only screen and (max-width: 450px){
+    
+
+    .globe{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .big{
+        display: none;
+    }
+    
+    .one{
+        display: none;
+        
+    }
+
+    .two{
+        display: none;
+    }
+
+    .logo{
+        margin-left: 65px;
+    }
+}
+
+@media  (min-width: 500px) and (max-width : 900px){
+
+    .ar{
+        display: none;
+    }
+    .big{
+        display: none;
+    }
+    
+    .role{
+        font-size: 10px;
+    }
+    
+    .hot{
+        font-size: 22px;
+    }
+
+    .nasaa{
+        display: none;
+    }
+
+    .multi{
+        display: none;
+    }
+
+    .woman{
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media  (min-width: 1600px) and (max-width : 2600px) {
+    .banner{
+        background-image: url(between.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+        color: white;
+        
+    }
+    
+    .banner .slider{
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        top:10% ;
+        left: calc(50% - 100px);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        animation: autoRun 20s linear infinite;
+    }
+
+    .banner .slider .item{
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc( (var(--position) - 1) * (360 /var(--quantity)) * 1deg) )
+         translateZ(750px);
+    }
+
+    .big{
+        height: 800px;
+    }
+}
+
+@media  (min-width: 800px) and (max-width : 1050px){
+    .role{
+        font-size: 14px;
+    }
+
+    .woman{
+        height: 500px;
+        width: 500px;
+    }
+
+    .nasaa{
+        display: none;
+    }
+}
